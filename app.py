@@ -18,7 +18,7 @@ def translate_text(translator, text):
 
 def main():
     dataset = load_dataset("tatsu-lab/alpaca")
-    mlm_lst = []
+    mm_lst = []
 
     # Create a single translator instance
     translator = GoogleTranslator(source='en')
@@ -28,11 +28,11 @@ def main():
 
         for i, future in enumerate(concurrent.futures.as_completed(futures)):
             logger.info(f"{i} of {len(dataset['train']['text'])} completed")
-            mlm_lst.append(future.result())
+            mm_lst.append(future.result())
 
     df = pd.DataFrame(mlm_lst, columns=['Prompt'])
     logger.info("Translation completed")
-    df.to_csv('translated_eng2mlm.csv', encoding="utf-8")
+    df.to_csv('translated.csv', encoding="utf-8")
 
 if __name__ == "__main__":
     main()
