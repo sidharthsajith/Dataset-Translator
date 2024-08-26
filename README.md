@@ -20,11 +20,11 @@ langs_dict = GoogleTranslator().get_supported_languages(as_dict=True)
 * concurrent.futures: A library for parallel processing.
 * logging: A library for logging and debugging.
 ## Functions
-* `translate_text`(translator, text): A function that translates a given text using the Google Translator API.
+* `translate_text(translator, text)`: A function that translates a given text using the Google Translator API.
 * `main()`: The main function that loads the dataset, creates a translator instance, and performs the translation process in parallel.
 ## Variables
 * `dataset`: The dataset loaded from the tatsu-lab/alpaca dataset.
-* `mlm_lst`: A list to store the translated text.
+* `mm_lst`: A list to store the translated text.
 * `translator`: A single instance of the Google Translator API.
 * `executor`: A thread pool executor used for parallel processing.
 * `futures`: A list of futures representing the translation tasks.
