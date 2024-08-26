@@ -1,4 +1,4 @@
-# Translation of English Text to Malayalam using Deep Translator and Datasets
+# Translation of Instruction Dataset in English to desired Language using Deep Translator and Datasets
 This documentation provides an overview of the code used to translate English text to any desired language using the Deep Translator library and the Datasets library.
 
 # Overview
