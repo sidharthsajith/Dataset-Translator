@@ -51,7 +51,7 @@ with concurrent.futures.ThreadPoolExecutor(max_workers=10) as executor:
 - It submits the translation tasks to the executor using the submit method, which returns a list of futures.
 - It iterates over the futures using the as_completed method, which returns an iterator over the futures as they complete.
 - For each future, it logs the progress of the translation process and appends the result to the mlm_lst list.
-- Once all the futures have completed, it creates a Pandas DataFrame from the mlm_lst list and saves it to a CSV file named translated_eng2mlm.csv.
+- Once all the futures have completed, it creates a Pandas DataFrame from the mm_lst list and saves it to a CSV file named translated.csv.
 ## Logging
 The code uses the logging library to log the progress of the translation process and any errors that may occur during the translation process. The logging level is set to INFO, which means that only important messages will be logged.
 
