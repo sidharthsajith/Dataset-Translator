@@ -1,5 +1,5 @@
 # Translation of English Text to Malayalam using Deep Translator and Datasets
-This documentation provides an overview of the code used to translate English text to Malayalam using the Deep Translator library and the Datasets library.
+This documentation provides an overview of the code used to translate English text to any desired language using the Deep Translator library and the Datasets library.
 
 # Overview
 The code is designed to translate a dataset of English text (alpaca for example here) to any language (currently Hindi) using the Google Translator API. The translation process is performed in parallel using multiple threads, which improves the speed and efficiency of the translation process.
