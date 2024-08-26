@@ -10,7 +10,7 @@ logger = logging.getLogger(__name__)
 
 def translate_text(translator, text):
     try:
-        translated_text = translator.translate(text, target='ml')
+        translated_text = translator.translate(text, target='hi')
         return translated_text
     except Exception as e:
         logger.error(f"Error translating text: {e}")
